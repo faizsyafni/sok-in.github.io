@@ -17,7 +17,7 @@
             </nav>
             <div class="form-box">
             <div  id="loginForm" >
-                <form class="form-box">
+                <form class="form-box" action="/user/index.html">
                     <div class="login-container" id="login">
                         <div class="top">
                             <header>Login</header>
@@ -32,7 +32,7 @@
                             <i class="bx bx-lock-alt"></i>
                         </div>
                         <div class="input-box">
-                            <button onclick="masuk()" type="submit" class="submit">Sign In</button>
+                            <button type="submit" class="submit">Sign In</button>
                         </div><br>
                         <div class="top">
                             <span>Don't have an account yet ? <a href="signup.html">Register</a></span>
@@ -46,14 +46,7 @@
 
         
     <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Mencegah pengiriman data form secara langsung
-            masuk();
-        });
-    
-        function masuk() {
-            window.location.href = '/user/index.html';
-        }
+        
     </script>
     
 </body>
